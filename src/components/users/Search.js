@@ -11,9 +11,13 @@ export class Search extends Component {
 
     onSubmit= (event) => {
         event.preventDefault();
+        if (this.state.text === ''){
+            this.props.setAlert('Please enter something', "light");
+        } else {
         this.props.searchUsers(this.state.text);
         this.setState({text:''});
-    }
+        }
+    };
 
   render() {
     return (
@@ -32,6 +36,8 @@ export class Search extends Component {
             className="btn btn-dark btn-block"
           />
         </form>
+        {this.props.showClear && <button className="btn btn-light btn-block" onClick={this.props.clearUsers}>Clear Results</button>}
+        
       </div>
     );
   }
