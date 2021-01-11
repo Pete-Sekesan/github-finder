@@ -13,12 +13,12 @@ import User from "./components/users/User";
 class App extends Component {
   state = {
     users: [],
-    user:{},
+    user: {},
     loading: false,
     alert: null,
+    repos:[]
   };
 
- 
   // Search Github Users
   searchUsers = async (text) => {
     this.setState({ loading: true });
@@ -37,8 +37,17 @@ class App extends Component {
     );
 
     this.setState({ user: response.data, loading: false });
-  }
+  };
 
+  //Get user repos
+  getUserRepos = async (username) => {
+    this.setState({ loading: true });
+    const response = await axios.get(
+      `https://api.github.com/users/${username}/repos?per_page=5&sort=created:asc&client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}$client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
+    );
+
+    this.setState({ repos: response.data, loading: false });
+  };
   clearUsers = () => this.setState({ users: [], loading: false });
 
   setAlert = (msg, type) => {
@@ -70,14 +79,24 @@ class App extends Component {
                       loading={this.state.loading}
                       users={this.state.users}
                     />
-                    
                   </Fragment>
                 )}
               />
-              <Route exact path = '/about' component= {About}/>
-              <Route exact path ='/user/:login' render={props => (
-                <User {...props} getUser={this.getUser} user={this.state.user} loading={this.state.loading}/>
-              )} />
+              <Route exact path="/about" component={About} />
+              <Route
+                exact
+                path="/user/:login"
+                render={(props) => (
+                  <User
+                    {...props}
+                    getUser={this.getUser}
+                    getUserRepos={this.getUserRepos}
+                    user={this.state.user}
+                    loading={this.state.loading}
+                    repos={this.state.repos}
+                  />
+                )}
+              />
             </Switch>
           </div>
         </div>
