@@ -1,4 +1,63 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/Pete-Sekesan">
+    <img src="images/Logo-03.png" alt="Logo" width="200" height="160">
+  </a>
+
+  <h3 align="center">GitHub Finder</h3>
+
+  <p align="center">
+    React application to search for GitHub users.
+    <br />
+    <br />
+    <a href="https://github-finder-peter-sekesan.vercel.app/">View Demo</a>
+    ·
+    <a href="https://github.com/Pete-Sekesan/github-finder/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Pete-Sekesan/github-finder/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[<img src="images/github-finder-demo.gif" alt="Logo" width="600" height="400">](https://github-finder-peter-sekesan.vercel.app/)
+
+Utilizing the GitHub API, this application lets you search for a name or username of any GitHub user and then presents you with a streamlined user bio page along with their most recent five projects. This application was originally written using class components, which I then refactored to functional via React Hooks.
+
+### Built With
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [React](https://reactjs.org/)
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Use this app to search for specific users or even portion of user names from GitHub. The results will then give you a streamlined interface to see recent work and some highlighted information including recent repos, if they are looking for work, etc. If more information is needed, a link to their full user profile is available.
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/Pete-Sekesan/github-finder/issues) for a list of proposed features (and known issues).
+
+## Contact
+
+Twitter - [@PeterSekesan](https://twitter.com/PeterSekesan)  
+psekesan@gmail.com
+
+Portfolio: https://peter-sekesan.dev
+
+Project Link: [https://github.com/Pete-Sekesan/github-finder](https://github.com/Pete-Sekesan/github-finder)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -38,33 +97,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
