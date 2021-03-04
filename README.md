@@ -11,7 +11,7 @@
     React application to search for GitHub users.
     <br />
     <br />
-    <a href="https://github-finder-peter-sekesan.vercel.app/">View Demo</a>
+    <a href="https://github-finder-70cv0qv92-peter-sekesan.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/Pete-Sekesan/github-finder/issues">Report Bug</a>
     ·
@@ -23,7 +23,7 @@
 
 ## About The Project
 
-[<img src="images/github-finder-demo.gif" alt="Logo" width="600" height="400">](https://github-finder-peter-sekesan.vercel.app/)
+[<img src="images/github-finder-demo.gif" alt="Logo" width="600" height="400">](https://github-finder-70cv0qv92-peter-sekesan.vercel.app/)
 
 Utilizing the GitHub API, this application lets you search for a name or username of any GitHub user and then presents you with a streamlined user bio page along with their most recent five projects. This application was originally written using class components, which I then refactored to functional via React Hooks.
 
